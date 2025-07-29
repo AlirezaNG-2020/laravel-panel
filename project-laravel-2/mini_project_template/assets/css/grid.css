@@ -1,0 +1,72 @@
+@font-face {
+	font-family: IRANSans;
+	src: url('../fonts/IRANSans/IRANSansWeb_Light.woff'),
+	url('../fonts/IRANSans/IRANSansWeb_Light.woff') format('truetype');
+	font-weight: normal;
+}
+
+* {
+	direction: rtl !important;
+	text-align: right !important;
+	font-family:IRANSans !important;
+    box-sizing: border-box !important;
+}
+
+
+.bg-blue {
+    background-color: rgb(74, 109, 165);
+    box-shadow: 0px 3px 4px #aaa, 0px 4px 8px #ededed;
+}
+
+body {
+    background-color: #ededed;
+}
+
+
+.card-body i {
+    font-size: 1.7rem;
+}
+
+.card-container {
+    font-size: .9rem;
+    color: #ededed;
+}
+
+.card-footer {
+    font-size: .8rem;
+}
+
+.card-container .card-footer {
+    padding: .5rem;
+}
+
+
+.card-container .card-body {
+    padding: .9rem;
+}
+
+
+.section-container {
+    font-size: .8rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 1rem;
+}
+
+.section-header h3 {
+    font-size: 1rem;
+}
+
+.section-header span {
+    font-size: .8rem;
+    color: gray;
+}
+
+.section-header {
+    margin-bottom: 2rem;
+}
+
+
+footer p{
+    font-size: .9rem;
+}

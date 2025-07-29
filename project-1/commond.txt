@@ -1,0 +1,108 @@
+composer create-project laravel/laravel pouya-project-laravel "10.3.0"
+
+php artisan serve
+
+
+php artisan make:controller HomeController
+
+
+php artisan make:controller Admin/Category/CategoryController --resource
+
+
+php artisan make:view index
+
+
+php artisan make:migration create_categories_table
+
+php artisan migrate ------> (این دستور میاد جداولی که کدش را در migrations نوشتیم در دیتابیس می سازه)
+
+
+
+
+php artisan make:seeder UserSeeder
+php artisan db:seed --class=class_name ----> (UserSeeder)
+
+
+
+(به ازای هر جدول در دیتابس باید یک مدل ایجاد شود باید به صورت مفرد به کار بره)دستور ساخت مدل:
+php artisan make:model Category
+
+
+
+
+عمومی کردن صفحه بندی:
+php artisan vendor:publish --tag=laravel-pagination
+
+
+php artisan make:request CategoryRequest
+
+
+
+https://laravel.com/docs/10.x/eloquent-relationships#one-to-many
+
+
+
+
+
+طریق نصب jetstream --------------> https://jetstream.laravel.com/installation.html
+
+1) composer require laravel/jetstream  ---------------> نصب پکیج Jetstream
+2) php artisan jetstream:install livewire ------------> راه‌اندازی Jetstream با Livewire
+3) npm install
+3) npm run build
+3) php artisan migrate
+
+
+
+
+php artisan make:component My/ContentHeader
+php artisan make:component my/content-header --view --------> بهتر هست از این دستور استفاده بشه
+
+
+
+
+php artisan config:clear
+php artisan cache:clear
+php artisan view:clear
+php artisan route:clear
+
+
+
+
+وصل کردن مدل مورد نظر به جدول مورد نظر در داخل خود مدل:
+protected $table = 'post_categories';
+
+
+
+
+
+
+
+
+توضیحی خدمت شما بدم:
+قیمت 4 میلیون که خدمت شما گفته بودم یعنی به صورت اختصاصی و بدون استفاده از موارد اضافی و سنگین شدن طرح همراه با تضمین سرعت بالای 90 درصد گوگل هست اگه با این استاندارد مد نظر دارید پیاده سازی کنم قیمت بنده 4 میلیون هست بله افرادی هستن که با 3 میلیون هم شاید انجام بدن ولی باتوجه به نکاتی که بنده قرار هست به صورت اختصاصی پیاده سازی کنم و سرعت بالای 90 درصد گوگل که برای لندینگ پیج مهم هست به این صورت خواهد بود.
+اگر مد نظر ندارید این نکات در پیاده سازی طرحتون انجام بدم میتونم قیمت پایین تر در نظر بگیرم.
+
+
+
+مفهوم
+rote model biding
+
+مطالعه شود
+
+شماره پوریا
+09104914467
+
+
+
+
+
+
+شروع لاراول:
+
+
+
+
+
+
+
